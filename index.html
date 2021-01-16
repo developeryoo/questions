@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Викторина</title>
+	<style type="text/css">
+		.mainn {
+			margin: 0 auto;
+			background-color: #cceb34;
+			text-align: center;
+			width: 50%;
+		}
+		.mainn2 {
+			margin: 0 auto;
+			background-color: #cceb34;
+			text-align: center;
+			width: 50%;
+		}
+		.mainn3 {
+			margin: 0 auto;
+			background-color: #cceb34;
+			text-align: center;
+			width: 50%;
+		}
+		.image {
+			height: 400px;
+			width: 100%;
+		}
+		.ask {
+			margin: 0;
+			text-align: left;
+			padding: 10px;
+		}
+		.otvets {
+			text-align: left;
+		}
+		.first {
+			background-color: orange;
+			height: 30px;
+		}
+		.second {
+			background-color: pink;
+			height: 30px;
+		}
+		.third {
+			background-color: aqua;
+			height: 30px;
+		}
+		.first2 {
+			background-color: orange;
+			height: 30px;
+		}
+		.second2 {
+			background-color: pink;
+			height: 30px;
+		}
+		.third2 {
+			background-color: aqua;
+			height: 30px;
+		}
+		.first3 {
+			background-color: orange;
+			height: 30px;
+		}
+		.second3 {
+			background-color: pink;
+			height: 30px;
+		}
+		.third3 {
+			background-color: aqua;
+			height: 30px;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="mainn">
+		<h2 class="ask">Кто изображен на картинке?</h2>
+		<div class="imagequestion">
+			<img class="image" style="width: auto;" src="stich.png">
+		</div>
+		<div class="otvets">
+			<div class="first">
+				<span>Стич</span>
+			</div>
+			<div class="second">
+				<span>Лило</span>
+			</div>
+			<div class="third">
+				<span>Рики</span>
+			</div>
+		</div>
+	</div>
+	<div class="mainn2">
+			<h2 class="ask">Какая это игра?</h2>
+			<div class="imagequestion">
+				<img class="image" src="cs.jpg">
+			</div>
+			<div class="otvets">
+				<div class="first2">
+					<span>Warface</span>
+				</div>
+				<div class="second2">
+					<span>CS:GO</span>
+				</div>
+				<div class="third2">
+					<span>Rainbow Six: Siege</span>
+				</div>
+		</div>
+	</div>
+		<div class="mainn3">
+		<h2 class="ask">Что это?</h2>
+		<div class="imagequestion">
+			<img class="image" style="width: auto;" src="ask3.png">
+		</div>
+		<div class="otvets">
+			<div class="first3">
+				<span>Кокос</span>
+			</div>
+			<div class="second3">
+				<span>Банан</span>
+			</div>
+			<div class="third3">
+				<span>Арбуз</span>
+			</div>
+		</div>
+	</div>
+
+
+	<script type="text/javascript">
+		document.querySelector(".first").onclick = function() {
+			alert('Правильно!');
+			document.querySelector(".mainn").style.display = "none";
+			document.querySelector(".mainn2").style.display = "block";
+		}
+		document.querySelector(".second2").onclick = function() {
+			alert('Правильно!');
+			document.querySelector(".mainn2").style.display = "none";
+			document.querySelector(".mainn3").style.display = "block";
+		}
+		document.querySelector(".first3").onclick = function() {
+			alert('Правильно!');
+			document.querySelector(".mainn3").style.display = "none";
+		}
+		document.querySelector(".second3").onclick = function() {
+			alert('Неправильно!');
+		}
+		document.querySelector(".third3").onclick = function() {
+			alert('Неправильно!');
+		}
+
+		document.querySelector(".first2").onclick = function() {
+			alert('Неправильно!');
+		}
+		document.querySelector(".third2").onclick = function() {
+			alert('Неправильно!');
+		}
+
+		document.querySelector(".second").onclick = function() {
+			alert('Неправильно!');
+		}
+		document.querySelector(".third").onclick = function() {
+			alert('Неправильно!');
+		}
+
+		document.querySelector(".mainn2").style.display = "none";
+		document.querySelector(".mainn3").style.display = "none";
+	</script>
+</body>
+</html>
